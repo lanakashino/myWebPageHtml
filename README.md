@@ -1,2 +1,2 @@
 # lanakashino.com
-Personal Website brought to you by https://github.com/amyhanv
+Personal Website template brought to you by https://github.com/amyhanv
