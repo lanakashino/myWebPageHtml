@@ -59,15 +59,19 @@ body {
   background-color: #fff;
 }
 
+strong {
+  font-weight: bold;
+}
+
 a {
   /* background-color: #fffa67 !important; */
-  font-style: italic;
+  /*font-style: italic;*/
 }
 
 a,
 a .fa {
   text-decoration: none;
-  color: #000 !important;
+  color: #000;
   -o-transition: 0.5s;
   -ms-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -77,12 +81,21 @@ a .fa {
 }
 a:hover,
 a .fa:hover {
-  text-decoration: line-through !important;
+  /*!* this will be active if there is an importnat*!*/
+  text-decoration: line-through;
+  color: #3c3c3c;
 }
 
 .container {
   padding: 0 60px;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .lanakashino {
   font-family: "Overpass Mono", monospace;
 }
@@ -92,6 +105,7 @@ a .fa:hover {
   width: 730px;
   display: block;
   margin: 0.5em auto;
+  margin-top: 5em;
   font-family: "Brandon";
   letter-spacing: 1px;
   padding: 0;
@@ -101,10 +115,25 @@ a .fa:hover {
   text-align: left;
 }
 
+.my-h1-center {
+  font-size: 2em;
+  width: 730px;
+  display: block;
+  margin: 0.5em auto;
+  margin-top: 5em;
+  font-family: "Brandon";
+  letter-spacing: 1px;
+  padding: 0;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+}
+
 .my-h2 {
   font-size: 1em;
   font-family: "Roboto Mono";
-  /* font-family: 'Brandon'; */
+   /*font-family: 'Brandon';*/
   line-height: 1.4;
   margin: 3em 0 1em 0;
   font-weight: 500;
@@ -112,7 +141,7 @@ a .fa:hover {
 }
 
 .row-auto {
-  margin: 0 auto !important;
+  margin: 0 auto;
 }
 
 .half-width {
@@ -120,7 +149,7 @@ a .fa:hover {
 }
 
 .contents {
-  width: 750px;
+  width: 1000px;
   display: block;
   margin: 0 auto;
 
@@ -142,7 +171,11 @@ p {
   width: 40px;
   color: #cdcdcd;
   border-top: 5px dashed;
-  margin: 2em auto 6em auto !important;
+  margin: 2em auto 6em auto;
+}
+
+.main {
+  margin-top: 30px;
 }
 
 /* end General */
@@ -168,7 +201,7 @@ p {
 
 /*hover applied to projects card*/
 .lift-hover {
-  transition: transform 0.3s ease-out !important;
+  transition: transform 0.3s ease-out;
 }
 .lift-hover:hover {
   transform: translate(0, -5px);
@@ -214,14 +247,33 @@ p {
   line-height: 1.8;
 }
 #side-name a {
-  color: #cdcdcd !important;
+  color: #cdcdcd
 }
 
 #initials {
   text-align: center;
+  width: 100%;
   color: #cdcdcd;
-  margin-top: 5em !important;
+  margin-top: 7em;
   font-family: "Lazer84";
+}
+
+nav {
+  font-family: Helvetica;
+  font-style: italic;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+}
+
+.navbar-nav a:hover {
+  text-decoration: line-through;
+  color: #0f0f0f;
+}
+
+.navbar-nav > .active {
+  color: #0f0f0f;
 }
 
 /* end Nav */
@@ -294,7 +346,7 @@ p {
 /* Projects ----------------------------------- */
 .projects {
   margin: 6em auto;
-  /* width: 750px; */
+   /*width: 750px;*/
   display: block;
 
   /* page load animation */
@@ -319,6 +371,7 @@ p {
   padding-left: 5px;
 }
 .project {
+  width: 100%;
   box-shadow: 3px 9px 35px rgba(0, 0, 0, 0.15);
   height: auto;
   background-color: #fff;
@@ -327,6 +380,11 @@ p {
   -moz-transition: box-shadow 0.8s ease-out;
   -o-transition: box-shadow 0.8s ease-out;
   transition: box-shadow 0.8s ease-out;
+}
+
+
+.projects {
+  width: 75%;
 }
 
 .projects img {
@@ -357,6 +415,42 @@ p {
 }
 /* end Projects */
 
+.entry {
+  margin-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+/* Experiences ----------------------------------- */
+
+.experiences {
+  margin-top: 3em;
+}
+.experiences p {
+  background-color: #fff;
+}
+
+.experiences .p-2 {
+  background-color: #fff !important;
+}
+
+
+ .experiences img {
+  width: 100%;
+  vertical-align: middle;
+   padding-right: 1em;
+}
+
+/* end Experiences */
+
+/* Education ----------------------------------- */
+
+#ubc-logo {
+  margin-bottom: 3em;
+  margin-top: 1em;
+}
+
+/* end Education */
+
 /* Footer ----------------------------------- */
 footer {
   width: 100%;
@@ -374,6 +468,7 @@ footer div {
 }
 .social-medias a {
   padding: 0 0.89em;
+  color: #3c3c3c;
 }
 
 /* end Footer */
@@ -398,7 +493,7 @@ footer div {
 }
 @media screen and (max-width: 992px) {
   .contents {
-    margin: 15px !important;
+    margin: 15px;
   }
   .container {
     padding: 0 40px;
@@ -430,7 +525,7 @@ footer div {
 
 @media screen and (max-width: 480px) {
   #initials {
-    margin-top: 0 !important;
+    margin-top: 0;
   }
   .container {
     padding: 0 2em;
