@@ -178,6 +178,12 @@ p {
   margin-top: 30px;
 }
 
+.collapsible-toggle {
+  cursor: pointer;
+}
+.collapsible-arrow{
+  padding-left: 3px;
+}
 /* end General */
 
 /* Buttons ----------------------------------- */
@@ -467,6 +473,10 @@ footer div {
 .social-medias a {
   padding: 0 0.89em;
   color: #3c3c3c;
+}
+
+.courses {
+  padding-left: 2em;
 }
 
 /* end Footer */
